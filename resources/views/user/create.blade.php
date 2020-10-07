@@ -20,23 +20,32 @@
 	<div class="form-group">
 		<label for="lastname" class="col-sm-2 control-label">邮箱</label>
 		<div class="col-sm-10">
-			<input type="text" class="form-control" id="lastname" 
+			<input type="text" class="form-control" id="lastname" name="email" 
 				   placeholder="请输入邮箱">
 		</div>
 	</div>
 	<div class="form-group">
 		<label for="lastname" class="col-sm-2 control-label">密码</label>
 		<div class="col-sm-10">
-			<input type="text" class="form-control" id="lastname" 
+			<input type="text" class="form-control" id="lastname" name="password"
 				   placeholder="请输入邮箱">
 		</div>
 	</div>
 	<div class="form-group">
-		<label for="lastname" class="col-sm-2 control-label">登陆时间</label>
+		<label for="lastname" class="col-sm-2 control-label">注册时间</label>
 		<div class="col-sm-10">
-			<input type="text" class="form-control" id="lastname" 
+			<input type="text" class="form-control" id="lastname" name="reg_time"
 				   placeholder="请输入邮箱">
 		</div>
+	</div>
+	<div class="form-group">
+		<label for="lastname" class="col-sm-2 control-label">最后登录时间</label>
+	</div>
+	<div class="form-group">
+		<label for="lastname" class="col-sm-2 control-label">最后登陆IP</label>
+	</div>
+	<div class="form-group">
+		<label for="lastname" class="col-sm-2 control-label">最后登陆次数</label>
 	</div>
 	<div class="form-group">
 		<div class="col-sm-offset-2 col-sm-10">
