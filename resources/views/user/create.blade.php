@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8"> 
-	<title>Bootstrap 实例 - 水平表单</title>
+	<title>登录</title>
 	<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">  
 	<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
 	<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -31,22 +31,38 @@
 				   placeholder="请输入邮箱">
 		</div>
 	</div>
-	<div class="form-group">
+
+
+	<!-- <div class="form-group">
 		<label for="lastname" class="col-sm-2 control-label">注册时间</label>
 		<div class="col-sm-10">
 			<input type="text" class="form-control" id="lastname" name="reg_time"
-				   placeholder="请输入邮箱">
+				   placeholder="注册时间">
 		</div>
 	</div>
 	<div class="form-group">
 		<label for="lastname" class="col-sm-2 control-label">最后登录时间</label>
+		<div class="col-sm-10">
+			<input type="text" class="form-control" id="lastname" name="last_name"
+				   placeholder="最后登录时间">
+		</div>
 	</div>
 	<div class="form-group">
 		<label for="lastname" class="col-sm-2 control-label">最后登陆IP</label>
+		<div class="col-sm-10">
+			<input type="text" class="form-control" id="lastname" name="reg_time"
+				   placeholder="最后登陆IP">
+		</div>
 	</div>
 	<div class="form-group">
 		<label for="lastname" class="col-sm-2 control-label">最后登陆次数</label>
-	</div>
+		<div class="col-sm-10">
+			<input type="text" class="form-control" id="lastname" name="reg_time"
+				   placeholder="最后登陆次数">
+		</div>
+	</div> -->
+
+
 	<div class="form-group">
 		<div class="col-sm-offset-2 col-sm-10">
 			<button type="submit" class="btn btn-default">登录</button>

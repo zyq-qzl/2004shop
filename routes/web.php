@@ -27,9 +27,9 @@ Route::prefix('文件名')->group(function(){
 
 
 
-Route::get('index',"TextController@index");
-Route::get('add',"TextController@add");
-Route::any('create',"TextController@create");
+//Route::get('index',"TextController@index");
+//Route::get('add',"TextController@add");
+//Route::any('create',"TextController@create");
 
 
 
@@ -40,6 +40,7 @@ Route::any('test',"IndexController@test");
 
 //用户
 Route::prefix('user')->group(function(){
-	Route::get('create',"AdminController@create");
+	Route::any('create',"AdminController@create");
 	Route::any('index',"AdminController@index");
+	Route::get('store',"AdminController@strore");
 });

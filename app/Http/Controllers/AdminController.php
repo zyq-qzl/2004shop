@@ -24,6 +24,7 @@ class AdminController extends Controller
      */
     public function create()
     {
+        //echo "123"
         return view('user.create');
     }
 
