@@ -9,7 +9,7 @@
 </head>
 <body>
 
-<form class="form-horizontal" role="form" action="{{'/user/store'}}" method="post">
+<form class="form-horizontal" role="form" action="{{url('/user/store')}}" method="post">
 	@csrf
 	<div class="form-group">
 		<label for="firstname" class="col-sm-2 control-label">用户名</label>

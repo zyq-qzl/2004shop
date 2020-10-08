@@ -13,24 +13,27 @@
 	<caption>用户列表</caption>
    <thead>
       <tr>
-         <th>名称</th>
-         <th>城市</th>
+         <th>ID</th>
+         <th>用户名</th>
+         <th>邮箱</th>
+         <th>密码</th>
+         <th>操作</th>
       </tr>
    </thead>
+   @foreach($arr as $v)
    <tbody>
       <tr>
-         <td>Tanmay</td>
-         <td>Bangalore</td>
-      </tr>
-      <tr>
-         <td>Sachin</td>
-         <td>Mumbai</td>
+         <td>{{$v->u_id}}</td>
+         <td>{{$v->u_name}}</td>
+         <td>{{$v->email}}</td>
+         <td>{{$v->password}}</td>
+         <td><a href="">删除</a>
+            <a href="">修改</a>
+         </td>
       </tr>
    </tbody>
+   @endforeach
 </table>
 
 </body>
 </html>
-
- 
-Copyright © 2013-2020菜鸟教程

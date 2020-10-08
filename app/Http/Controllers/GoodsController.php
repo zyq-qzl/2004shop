@@ -3,9 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use DB;
+use App\Model\Goods as g;
 
-class AdminController extends Controller
+class GoodsController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,8 +14,7 @@ class AdminController extends Controller
      */
     public function index()
     {
-        $arr = DB::table("user")->get();
-        return view('admin.index',['arr'=>$arr]);
+        return view('goods.index');
     }
 
     /**
@@ -25,7 +24,7 @@ class AdminController extends Controller
      */
     public function create()
     {
-        return view('admin.create');
+        return view('goods.create');
     }
 
     /**
@@ -36,19 +35,7 @@ class AdminController extends Controller
      */
     public function store(Request $request)
     {
-        // $data = [
-        //     'u_name'=>$request('u_name'),
-        // ];
-        
-        $data = $request->except('_token');
-        $data['password']=md5($data['password']);
-        $data['reg_time']=time();
-        $res = DB::table('user')->insert($data);
-        //dd($res);
-        if($res){
-            return redirect('/admin/index');
-        }
-        
+        //
     }
 
     /**
