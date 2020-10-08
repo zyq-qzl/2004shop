@@ -24,7 +24,6 @@ class AdminController extends Controller
      */
     public function create()
     {
-        //echo "123"
         return view('user.create');
     }
 
@@ -36,7 +35,13 @@ class AdminController extends Controller
      */
     public function store(Request $request)
     {
-        
+            $u_name = $_POST['u_name'];
+            $email = $_POST['email'];
+            $password = $_POST['password'];
+            $data = $request->except('_token');
+        echo $u_name;die;
+        $user = DB::table('user')->select($data);
+        dd('user');
     }
 
     /**

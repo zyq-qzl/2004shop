@@ -1,10 +1,8 @@
-RUNOOB.COM
- 
 <!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8"> 
-	<title>Bootstrap 实例 - 基本的表格</title>
+	<title>用户</title>
 	<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">  
 	<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
 	<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -12,7 +10,7 @@ RUNOOB.COM
 <body>
 
 <table class="table">
-	<caption>基本的表格布局</caption>
+	<caption>用户列表</caption>
    <thead>
       <tr>
          <th>名称</th>

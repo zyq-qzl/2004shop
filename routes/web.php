@@ -31,10 +31,6 @@ Route::prefix('文件名')->group(function(){
 //Route::get('add',"TextController@add");
 //Route::any('create',"TextController@create");
 
-
-
-Route::any('index',"AdminController@index");
-
 Route::any('test',"IndexController@test");
 
 

@@ -9,7 +9,8 @@
 </head>
 <body>
 
-<form class="form-horizontal" role="form">
+<form class="form-horizontal" role="form" action="{{'/user/store'}}" method="post">
+	@csrf
 	<div class="form-group">
 		<label for="firstname" class="col-sm-2 control-label">用户名</label>
 		<div class="col-sm-10">
@@ -27,7 +28,7 @@
 	<div class="form-group">
 		<label for="lastname" class="col-sm-2 control-label">密码</label>
 		<div class="col-sm-10">
-			<input type="text" class="form-control" id="lastname" name="password"
+			<input type="password" class="form-control" id="lastname" name="password"
 				   placeholder="请输入邮箱">
 		</div>
 	</div>
