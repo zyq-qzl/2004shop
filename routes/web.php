@@ -34,6 +34,10 @@ Route::get('/ip',function(){
 });
 
 
+//redis
+Route::get('redis1',"IndexController@redis1");
+Route::get('redis2',"IndexController@redis2");
+Route::get('redis3',"IndexController@redis3");
 
 
 //Route::get('index',"TextController@index");

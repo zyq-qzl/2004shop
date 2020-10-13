@@ -5,6 +5,18 @@
 	<title>注册</title>
 </head>
 <body>
+	@if ($errors->any()) 
+	<div class="alert alert-danger"> 
+	<ul>
+		@foreach ($errors->all() as $error) 
+			<li>{{ $error }}</li>
+		@endforeach
+			</ul> 
+	</div>
+	@endif
+	
+	{{session('msg')}}
+
 	<form action="{{url('/user/doRegist')}}" method="post">
 		@csrf
 		<table>
@@ -26,7 +38,7 @@
 			</tr>
 			<tr>
 				<td>确认密码</td>
-				<td><input type="password" name="ppwd" placeholder="请输入重置密码"></td>
+				<td><input type="password" name="pwd_confirmation" placeholder="请输入确认密码"></td>
 			</tr>
 			<tr>
 				<td><input type="submit" value="注册"></td>

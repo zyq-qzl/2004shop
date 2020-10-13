@@ -5,7 +5,9 @@
 	<title>登录</title>
 </head>
 <body>
-	<form action="{{url('login')}}" method="post">
+	{{session('msg')}}
+	<form action="{{url('/user/doLogin')}}" method="post">
+		@csrf
 		<table>
 			<tr>
 				<td>用户名</td>
@@ -21,5 +23,6 @@
 			</tr>
 		</table>
 	</form>
+
 </body>
 </html>
