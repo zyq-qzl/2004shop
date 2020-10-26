@@ -45,6 +45,7 @@ Route::get('redis3',"IndexController@redis3");
 //Route::any('create',"TextController@create");
 
 Route::any('test',"IndexController@test");
+Route::get('api1',"IndexController@api1");
 
 
 //用户
@@ -69,3 +70,30 @@ Route::prefix('user')->group(function(){
 	Route::any('login',"UserController@login");
 	Route::any('doLogin',"UserController@doLogin");
 });
+
+
+
+//后台
+//登录
+Route::get('/index/login',"Index\LoginController@login");
+Route::post('/index/doLogin',"Index\LoginController@dologin");
+//注册
+Route::get('/index/register',"Index\LoginController@register");
+Route::any('/index/doRegister',"Index\LoginController@doRegister");
+//首页
+Route::get('/index/index',"Index\IndexController@index");
+//商品详情
+Route::get('/index/item',"Index\IndexController@item");
+//商品列表
+Route::get('/index/list',"Index\IndexController@list");
+//商品收藏
+Route::get('/index/fav',"Index\IndexController@fav");
+//购物车
+Route::get('/index/cart',"Index\CartController@index");
+Route::post('/index/cartadd',"Index\CartController@cartadd");
+//订单
+Route::get('/index/home-index',"Index\HomeindexController@home");
+
+Route::get('/index/getorderinfo',"Index\OrderController@getorderinfo");
+
+Route::get('/index/pay',"Index\PayController@pay");

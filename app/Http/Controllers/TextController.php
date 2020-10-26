@@ -30,7 +30,6 @@ class TextController extends Controller
     }
 
 
-   public function list(){
-
-   }
+  	public function weather(){
+	  }
 }

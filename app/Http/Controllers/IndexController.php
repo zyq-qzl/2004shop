@@ -66,4 +66,26 @@ class IndexController extends Controller
         $num = Redis::incr('count');
         echo $num;
     }
+
+
+
+    public function api1(){
+        //$api_url = "https://github.com/login/oauth/access_token";
+        echo "124";
+    }
+
+
+    public function weather()
+    {
+        $url = "https://devapi.qweather.com/v7/weather/now?location=101010700&key=542c4b7d5b304dfc9580ba60aa2d3644";
+
+    }
+
+
+
+    public function guzzle()
+    {
+        $url = "https://devapi.qweather.com/v7/weather/now?location=101010700&key=542c4b7d5b304dfc9580ba60aa2d3644";
+        $client = new Client();
+    }
 }
