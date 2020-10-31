@@ -97,3 +97,12 @@ Route::get('/index/home-index',"Index\HomeindexController@home");
 Route::get('/index/getorderinfo',"Index\OrderController@getorderinfo");
 
 Route::get('/index/pay',"Index\PayController@pay");
+
+//抽奖
+Route::get('/index/rand',"Index\RandController@index");
+Route::get('/index/start',"Index\RandController@start");
+Route::get('/index/addRand',"Index\RandController@addRand");
+
+//电影
+Route::get('/a/movie',"MovieController@movie");
+Route::get('/a/add',"MovieController@add");

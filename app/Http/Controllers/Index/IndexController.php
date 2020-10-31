@@ -13,7 +13,7 @@ class IndexController extends Controller
 	public function __construct()
 	{
 		$this->uid = session()->get('uid');
-		var_dump($this->uid);exit;
+		//var_dump($this->uid);exit;
 	}
 
 
